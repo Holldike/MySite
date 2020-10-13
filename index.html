@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet">
+    <link href="style-burger-menu.css" rel="stylesheet">
 </head>
 <body>
 <!-- banner -->
+<div class="burger-menu">
+    <a href="#" class="burger-menu-button">
+        <span class="burger-menu-lines"></span>
+    </a>
+
+    <nav class="burger-menu-nav">
+        <a href="#" class="burger-menu-link">Home</a>
+        <a href="#about" class="burger-menu-link">About Us</a>
+        <a href="#services" class="burger-menu-link">Services</a>
+        <a href="#contact" class="burger-menu-link">Contact</a>
+    </nav>
+
+    <div class="burger-menu-overlay"></div>
+</div>
 <div class="banner">
     <header>
         <div class="logo">
         </div>
-        <div class="burger-menu"></div>
+
     </header>
     <img src="image/bg.jpg">
     <div class="content">
@@ -25,7 +40,7 @@
     </div>
 </div>
 <!--About -->
-<section class="about">
+<section class="about" id="about">
     <div class="contentBx">
         <h2 class="heading">About Us</h2>
         <p class="text">
@@ -40,7 +55,7 @@
     <div class="imgBx"></div>
 </section>
 <!-- Service -->
-<section class="services">
+<section class="services" id="services">
     <h2 class="heading">Our Services</h2>
     <p class="text">
         But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
@@ -69,7 +84,7 @@
     </div>
 </section>
 <!-- Contact -->
-<section class="about">
+<section class="about" id="contact">
     <div class="imgBx contactImgBx">
         <section class="contact">
             <h2 class="heading">Contact Us</h2>
@@ -131,5 +146,8 @@
     </div>
 </section>
 <section class="all-right-reserved">©All rights reserved</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

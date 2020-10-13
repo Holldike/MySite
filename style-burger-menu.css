@@ -1,0 +1,129 @@
+.burger-menu-button {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    right: 100px;
+    top: 55px;
+    background: #000;
+    z-index: 30;
+    transition: 0.4s;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+
+.burger-menu-active .burger-menu-button,
+.burger-menu-active .burger-menu-lines {
+    background: transparent;
+}
+
+.burger-menu-active .burger-menu-lines::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.burger-menu-active .burger-menu-lines::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.burger-menu-button:hover {
+    filter: brightness(0.7);
+}
+
+.burger-menu-lines,
+.burger-menu-lines::after,
+.burger-menu-lines::before {
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    background: #ffffff;
+}
+
+.burger-menu-lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.burger-menu-lines::before {
+    content: '';
+    top: -12px;
+}
+
+.burger-menu-lines::after {
+    content: '';
+    top: 12px
+}
+
+.burger-menu-nav {
+    padding-top: 185px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 275px;
+    background: #000000;
+    overflow: auto;
+    right: -100%;
+    transition: 0.5s;
+}
+
+.burger-menu-active .burger-menu-nav {
+    right: 0;
+}
+
+.burger-menu-link {
+    padding: 30px;
+    font-size: 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.burger-menu-link:hover {
+    background: white;
+    color: #000;
+}
+
+.burger-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.burger-menu-active .burger-menu-overlay {
+    z-index: 10;
+    display: block;
+    background: rgba(0, 0, 0, 0.32);
+}
+
+@media (max-width: 991px) {
+    .burger-menu-button {
+        width: 60px;
+        height: 60px;
+        right: 60px;
+        top: 40px;
+    }
+
+    .burger-menu-lines,
+    .burger-menu-lines::after,
+    .burger-menu-lines::before {
+        width: 25px;
+    }
+
+    .burger-menu-nav {
+        width: 175px;
+    }
+
+    .burger-menu-link {
+        font-size: 16px;
+    }
+
+}

@@ -63,16 +63,6 @@
     background-size: cover;
 }
 
-.banner header .toggle {
-    position: fixed;
-    width: 36px;
-    height: 36px;
-    background: url(image/toggle.png);
-    background-size: cover;
-    right: 60px;
-    top: 55px;
-}
-
 .about {
     background: #162c3b;
     position: relative;
