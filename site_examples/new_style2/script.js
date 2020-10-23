@@ -27,7 +27,7 @@ $(document).ready(function () {
     }
 
     function replaceContent(content) {
-        let contents = $('.content .contentBox');
+        let contents = $('.content .content-box');
         let images = $('.right-side').find('img');
 
         showNecessary(contents);
