@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href="style-burger-menu.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo"></div>
+</header>
+<section>
+    <div class="burger-menu">
+        <a href="#" class="burger-menu-button">
+            <span class="burger-menu-line burger-menu-line-1"></span>
+            <span class="burger-menu-line burger-menu-line-2"></span>
+            <span class="burger-menu-line burger-menu-line-3"></span>
+        </a>
+        <nav class="burger-menu-nav">
+            <a href="#home" data-content="home" class="burger-menu-link">Home</a>
+            <a href="#about" data-content="about" class="burger-menu-link">About Us</a>
+            <a href="#service" data-content="service" class="burger-menu-link">Services</a>
+            <a href="#contact" data-content="contact" class="burger-menu-link">Contact</a>
+        </nav>
+        <div class="burger-menu-overlay"></div>
+    </div>
+    <div class="content">
+        <div class="contentBox" data-content="home" id="home">
+            <div class="textBox">
+                <h2>Web Making<br><span>Floppy App</span></h2>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text.
+                    It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                    looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+                    through the cites of the word in classical literature, discovered the undoubtable source.
+                </p>
+                <a class="click" data-content="about">click to next<div class="arrow-right"></div></a>
+            </div>
+        </div>
+        <div class="contentBox" data-content="about" id="about">
+            <div class="textBox">
+                <h2>Some text<br><span>About Us</span></h2>
+                <p>
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I
+                    will give you a complete account of the system, and expound the actual teachings of the great
+                    explorer of
+                    the truth, the master-builder of human happiness.
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I
+                    will give you a complete account of the system, and expound the actual teachings of the great
+                    explorer of
+                    the truth, the master-builder of human happiness.
+                </p>
+                <div class="buttons">
+                    <a class="click" data-content="home"><div class="arrow-left"></div>click to back</a>
+                    <a class="click" data-content="service">click to next<div class="arrow-right"></div></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="contentBox" data-content="service" id="service">
+            <div class="textBox">
+                <h2>Some text<br><span>Services</span></h2>
+                <p>
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I
+                    will give you a complete account of the system, and expound the actual teachings of the great
+                    explorer of
+                    the truth, the master-builder of human happiness.
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I
+                    will give you a complete account of the system, and expound the actual teachings of the great
+                    explorer of
+                    the truth, the master-builder of human happiness.
+                </p>
+                <a class="click" data-content="about"><div class="arrow-left"></div>click to back</a>
+                <a class="click" data-content="contact">click to next<div class="arrow-right"></div></a>
+            </div>
+        </div>
+        <div class="contentBox contact" data-content="contact" id="contact">
+            <div class="textBox">
+                <h2>Some text<br><span>Contact</span></h2>
+                <p>
+                    But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I
+                </p>
+                <div class="form">
+                    <div class="inputBx">
+                        <input type="text" name="" placeholder="Full Name">
+                    </div>
+                    <div class="inputBx">
+                        <input type="text" name="" placeholder="Email Address">
+                    </div>
+                    <div class="inputBx">
+                        <input type="text" name="" placeholder="Mobile No.">
+                    </div>
+                    <div class="inputBx">
+                        <textarea placeholder="Write your message here"></textarea>
+                    </div>
+                    <div class="inputBx">
+                        <input type="submit" name="" value="Send">
+                    </div>
+                </div>
+                <a class="click" data-content="service"><div class="arrow-left"></div>click to back</a>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <img data-content="contact" src="image/contact.jpg">
+        <img data-content="home" src="image/home.jpg">
+        <img data-content="about" src="image/about.jpg">
+        <img data-content="service" src="image/service.jpg">
+    </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Poppins, sans-serif;
+
+    }
+
+    section {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #0062be;
+        transition: 0.5s;
+    }
+
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        position: relative;
+        max-width: 80px;
+    }
+
+    header ul {
+        position: relative;
+        display: flex;
+    }
+
+    header ul li {
+        list-style: none;
+
+    }
+
+    header ul li a {
+        display: inline-block;
+        color: #fff;
+        font-weight: 400;
+        margin-left: 40px;
+        text-decoration: none;
+    }
+
+    .content {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content .textBox {
+        position: relative;
+        max-width: 600px;
+    }
+
+    .content .textBox h2 {
+        color: #fff;
+        font-size: 4em;
+        line-height: 1.5em;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .content .textBox h2 span {
+        font-size: 2em;
+    }
+
+    .content .textBox p {
+        color: #fff;
+    }
+
+    .content .textBox a {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 8px 20px;
+        background: #fff;
+        color: #111;
+        border-radius: 40px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .content .imgBox {
+        width: 600px;
+        display: flex;
+        padding-right: 50px;
+        margin-top: 50px;
+        justify-content: flex-end;
+    }
+
+    .content .imgBox img {
+        max-width: 260px;
+    }
+
+    .thumb {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .thumb li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .thumb li:hover {
+        transform: translateY(-15%);
+    }
+
+    .thumb li img {
+        max-width: 40px;
+    }
+
+    .sci {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sci li {
+        list-style: none;
+    }
+
+    .sci li a {
+        display: inline-block;
+        filter: invert(1);
+        margin: 5px 0;
+        transform: scale(0.6);
+    }
+
+</style>
+<body>
+<section class="sec">
+    <header>
+        <a>
+            <img src="image/logo.png" class="logo">
+        </a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>That's What<br><span>I Like</span></h2>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text.
+                It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+                looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going
+                through the cites of the word in classical literature, discovered the undoubtable source.
+            </p>
+            <a>View All Products</a>
+        </div>
+        <div class="imgBox">
+            <img src="image/pepsi001.png" class="pepsi">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img onclick="imgSlider('image/pepsi001.png');changeBgColor('#0062be')" src="image/pepsi001.png"></li>
+        <li><img onclick="imgSlider('image/pepsi002.png');changeBgColor('#e60c2c')" src="image/pepsi002.png"></li>
+        <li><img onclick="imgSlider('image/pepsi003.png');changeBgColor('#1e1e1e')" src="image/pepsi003.png"></li>
+    </ul>
+    <ul class="sci">
+        <li><a href="#"><img src="image/facebook.png"></a></li>
+        <li><a href="#"><img src="image/twitter.png"></a></li>
+        <li><a href="#"><img src="image/instagram.png"></a></li>
+    </ul>
+</section>
+<script>
+    function imgSlider(anything) {
+        document.querySelector('.pepsi').src = anything;
+    }
+
+    function changeBgColor(color) {
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+</script>
+</body>
+</html>
