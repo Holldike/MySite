@@ -48,6 +48,29 @@ header
         span
           font-size: 2em
 
+      .service-container
+        display: flex
+        justify-content: space-between
+
+        .service-box
+          border-radius: 5px
+          color: #2b2b2b
+          font-weight: 600
+          background: white
+          padding: 25px
+          display: flex
+          flex-direction: column
+          justify-content: center
+          align-items: center
+          text-align: center
+          margin-bottom: 25px
+
+          img
+            max-width: 100px
+
+          p
+            font-size: 14px
+
 .right-side
   background: #d9f5fc
   position: absolute
@@ -57,13 +80,15 @@ header
   top: 0
 
   img
-    position: absolute
     object-fit: cover
     opacity: 0.55
     height: 100%
     width: 100%
     left: 0
     top: 0
+
+.buttons
+  margin: 15px 0
 
 .click
   text-transform: uppercase
@@ -73,6 +98,7 @@ header
   padding: 8px 15px
   margin-top: 20px
   font-weight: 600
+  font-size: 14px
   cursor: pointer
   color: #2b2b2b
 
@@ -81,8 +107,8 @@ header
     background-size: cover
     display: inline-block
     position: relative
-    height: 22px
-    width: 22px
+    height: 20px
+    width: 20px
     top: 5px
 
   .arrow-left
@@ -109,7 +135,6 @@ header
       border: none
       border-bottom: 2px solid #d9f5fc
       padding: 10px 0
-      font-size: 18px
       color: #d9f5fc
 
     input::placeholder
@@ -122,7 +147,6 @@ header
       outline: none
       border: none
       padding: 10px 0
-      font-size: 18px
       color: #d9f5fc
       min-height: 150px
       border-bottom: 2px solid #d9f5fc
@@ -138,37 +162,16 @@ header
       font-weight: 500
       letter-spacing: 1px
       border-bottom: none
-
-.service-container
-  display: flex
-  justify-content: space-between
-  margin: 20px
-
-  .service-box
-    border-radius: 5px
-    color: #2b2b2b
-    font-weight: 600
-    background: white
-    padding: 25px
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
-    margin-bottom: 25px
-
-    img
-      max-width: 100px
+      font-size: 18px
 
 .contact-info
   border-top: 2px solid white
-  padding: 10px
-  margin-top: 35px
+  padding: 25px 50px
   display: flex
   justify-content: space-between
   align-items: center
 
-  > div
-    padding-top: 30px
+  .contact-container
     display: flex
 
   .contact-logo
@@ -178,7 +181,7 @@ header
     display: inline-flex
     justify-content: center
     align-items: center
-    border-radius: 10px
+    border-radius: 8px
 
     img
       width: 30px
@@ -197,4 +200,3 @@ header
   text-align: center
   background: #607D8B
   width: 100%
-  z-index: 1

@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/burger-menu.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -22,34 +21,10 @@
                 Using modern creation technologies,<br>
                 we produce high-performance web applications in the shortest possible time.
             </p>
-            <a class="click" data-content="about">click to next
-                <div class="arrow-right"></div>
-            </a>
-            <div class="contact-info">
-                <div>
-                    <div class="contact-logo">
-                        <img src="contact_logo/telegram.png">
-                    </div>
-                    <div class="contact-text">
-                        <p>@companyName</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="contact-logo">
-                        <img src="contact_logo/email.png">
-                    </div>
-                    <div class="contact-text">
-                        <p>mail@gmail.com</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="contact-logo">
-                        <img src="contact_logo/phone.png">
-                    </div>
-                    <div class="contact-text">
-                        <p>+38099876543</p>
-                    </div>
-                </div>
+            <div class="buttons">
+                <a class="click" data-content="about">click to next
+                    <div class="arrow-right"></div>
+                </a>
             </div>
         </div>
     </div>
@@ -154,6 +129,39 @@
                 click to back</a>
         </div>
     </div>
+    <div class="contact-info">
+        <div>
+            <div class="contact-container">
+                <div class="contact-logo">
+                    <img src="contact_logo/telegram.png">
+                </div>
+                <div class="contact-text">
+                    <p>@floppyapp</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="contact-container">
+                <div class="contact-logo">
+                    <img src="contact_logo/email.png">
+                </div>
+                <div class="contact-text">
+                    <p>floppyapp@gmail.com</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="contact-container">
+                <div class="contact-logo">
+                    <img src="contact_logo/phone.png">
+                </div>
+                <div class="contact-text">
+                    <p>+38099876543</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="all-right-reserved">©All rights reserved</div>
 </div>
 <div class="burger-menu">
     <a href="#" class="burger-menu-button">
@@ -175,7 +183,6 @@
     <img data-content="about" src="image/about.jpg">
     <img data-content="service" src="image/service.jpg">
 </div>
-<section class="all-right-reserved">©All rights reserved</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
 
