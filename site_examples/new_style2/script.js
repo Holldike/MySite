@@ -22,6 +22,12 @@ $(document).ready(function () {
         function toggleMenu() {
             menu.toggleClass('burger-menu-active');
 
+            if (menu.hasClass('burger-menu-active')) {
+                $('body').css('overflow', 'hidden');
+            } else {
+                $('body').css('overflow', 'visible');
+
+            }
         }
 
     }
